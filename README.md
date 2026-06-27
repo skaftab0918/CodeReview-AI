@@ -1,13 +1,13 @@
 # CodeReview AI 🔍
 
-An AI-powered code review tool built with **React 18 + Vite + Tailwind CSS + Claude API**.
+An AI-powered code review tool built with **React 18 + Vite + Tailwind CSS + GEMINI API**.
 
 Paste any code → get instant analysis: bugs, security vulnerabilities, performance issues, style feedback, and concrete fix suggestions.
 
 ## Features
 
 - **Multi-language support** — JavaScript, TypeScript, React/JSX, Python, Node.js, CSS, SQL
-- **AI-powered analysis** — Uses Claude (claude-sonnet-4-6) via Anthropic API
+- **AI-powered analysis** — Uses GEMINI API
 - **Detailed scoring** — Overall score + Readability, Performance, Security, Maintainability metrics
 - **Actionable fixes** — Every issue includes a concrete code fix suggestion
 - **Sample code** — Built-in intentionally buggy samples for each language
@@ -21,7 +21,7 @@ Paste any code → get instant analysis: bugs, security vulnerabilities, perform
 | Framework | React 18 + Vite |
 | Styling | Tailwind CSS |
 | Font | JetBrains Mono (editor), Inter (UI) |
-| AI | Anthropic Claude API (claude-sonnet-4-6) |
+| AI | GEMINI API |
 | Deployment | Vercel |
 
 ## Local Setup
@@ -72,7 +72,7 @@ src/
 │   ├── ReviewPanel.jsx     # Right panel: results/loading/empty states
 │   └── LanguageSelect.jsx  # Language dropdown
 ├── hooks/
-│   └── useCodeReview.js    # Claude API integration hook
+│   └── useCodeReview.js    # GEMINI API integration hook
 ├── samples.js              # Built-in buggy code samples
 ├── App.jsx                 # Main layout
 ├── main.jsx                # Entry point
@@ -82,12 +82,12 @@ src/
 ## How It Works
 
 1. User pastes code + selects language
-2. `useCodeReview` hook sends code to Claude API with a structured prompt
-3. Claude returns a JSON object with scores, issues, and fix suggestions
+2. `useCodeReview` hook sends code to GEMINI API with a structured prompt
+3. GEMINI returns a JSON object with scores, issues, and fix suggestions
 4. `ReviewPanel` renders the results with `ScoreCard` and `IssueCard` components
 
 rompt engineering to enforce strict JSON response schema from the LLM"
 
 ---
 
-Built by [Aftab Shaikh] · [Live Demo](https://your-deploy-url.vercel.app)
+Built by [Aftab Shaikh] · [Live Demo](https://vercel.com/skaftab0918s-projects/code-review-ai)
