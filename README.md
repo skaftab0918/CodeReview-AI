@@ -90,4 +90,4 @@ rompt engineering to enforce strict JSON response schema from the LLM"
 
 ---
 
-Built by [Aftab Shaikh] · [Live Demo](https://vercel.com/skaftab0918s-projects/code-review-ai)
+Built by [Aftab Shaikh] · [Live Demo](https://code-review-ai-pi-lyart.vercel.app/)
